@@ -1,10 +1,8 @@
 # INTERFACING DAC WITH 8086 KIT AND GENERATING SAWTOOTH AND SQUARE WAVEFORMS
 ## AIM
 To write an assembly language program in 8086 to generate Sawtooth and Square waveforms using DAC.
-
 ---
 ## APPARATUS REQUIRED
-
 | S. No | Item              | Specification   | Quantity |
 |-------|------------------|-----------------|----------|
 | 1     | Microprocessor kit | 8086            | 1        |
@@ -33,7 +31,6 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 ## PROGRAMS
 # 8086 Assembly Programs – DAC Interfacing
 ## Program: Square Wave
-
 | Memory Location | Program     | Comments                          |
 |-----------------|-------------|-----------------------------------|
 | 1000            | MOV AL,00H  | Load 00H in Accumulator           |
@@ -43,17 +40,14 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 | 100A            |   OUT 0C8H,AL|  Send through output port       |
 | 100D            |  CALL DELAY(1100) | CALL PROGRAM TO 1100       |
 
-
 | Memory Location | Program     | Comments                          |
 |-----------------|-------------|-----------------------------------|
 | 1100            | MOV CX,0505  | Load 0505H in Accumulator           |
 | 1103            |  DEC CX | Decrement CX        |
 | 1105           |  JNZ 1104  | RPEAT UNTILL ZERO      |
 | 1108            |   RET |   RETURN TO MAIN PROGRAM      |
-
 # Program: Sawtooth wave
 ## Assembly Program
-
 | Memory Location | Program Instruction   | Comments                        |
 |-----------------|-----------------------|---------------------------------|
 | `1000`          | `START: MOV AL,00H`  | Load `00H` in accumulator       |
@@ -71,7 +65,6 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 ---
 ## Model Graph
 <img width="591" height="808" alt="image" src="https://github.com/user-attachments/assets/40cbaf4c-088f-4aee-a0dc-e39f306779ec" />
-
 ## OUTPUT IMAGE OF DAC(SAWTOOTH WAVE FROM DSO AND SQUARE WAVE FROM DSO)
 <img width="1108" height="828" alt="image" src="https://github.com/user-attachments/assets/74d71b04-ef34-416c-aaa0-725b3a755c35" />
 <img width="1100" height="816" alt="image" src="https://github.com/user-attachments/assets/aa8eab40-3ca2-41f9-93dc-1f4d8d008b22" />
