@@ -14,9 +14,7 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 | 3     | DAC Interface board | -              | 1        |
 
 ---
-
 ## ALGORITHM
-
 ### Measurement of Analog Voltage
 1. Send the digital value to DAC.  
 2. Read the corresponding analog value at its output.  
@@ -29,16 +27,13 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 3. Send high value to DAC.  
 4. Introduce delay.  
 5. Repeat the above procedure.  
-
 #### Sawtooth Waveform
 1. Load low value (00) to accumulator.  
 2. Send this value to DAC.  
 3. Increment the accumulator.  
 4. Repeat step (ii) and (iii) until accumulator value reaches FF.  
 5. Repeat the above procedure from step 1.  
-
 ---
-
 ## PROGRAMS
 
 # 8086 Assembly Programs – DAC Interfacing
@@ -62,9 +57,7 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 | 1105           |  JNZ 1104  | RPEAT UNTILL ZERO      |
 | 1108            |   RET |   RETURN TO MAIN PROGRAM      |
 
-
 # Program: Sawtooth wave
-
 ## Assembly Program
 
 | Memory Location | Program Instruction   | Comments                        |
@@ -76,22 +69,17 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 | `1009`          | `JMP START`          | Go to starting location         |
 
 ---
-
 ## Tabulation
-
 | Waveform  | Amplitude | Time period | 
 |-----------|-----------|-------------|
-| Sawtooth  |           |             | 
-| Square    |           |             |
+| Sawtooth  | 7.02V     |   1.589ms   | 
+| Square    | 8.08V     |   6.405     |
 ---
-
 ## Model Graph
 
-*(Insert graph/diagram here if available)*
-
-
-
 ## OUTPUT IMAGE OF DAC(SAWTOOTH WAVE FROM DSO AND SQUARE WAVE FROM DSO)
+<img width="1108" height="828" alt="image" src="https://github.com/user-attachments/assets/74d71b04-ef34-416c-aaa0-725b3a755c35" />
+<img width="1100" height="816" alt="image" src="https://github.com/user-attachments/assets/aa8eab40-3ca2-41f9-93dc-1f4d8d008b22" />
 
 
 
