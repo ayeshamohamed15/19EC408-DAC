@@ -1,10 +1,8 @@
 # INTERFACING DAC WITH 8086 KIT AND GENERATING SAWTOOTH AND SQUARE WAVEFORMS
-
 ## AIM
 To write an assembly language program in 8086 to generate Sawtooth and Square waveforms using DAC.
 
 ---
-
 ## APPARATUS REQUIRED
 
 | S. No | Item              | Specification   | Quantity |
@@ -18,9 +16,7 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 ### Measurement of Analog Voltage
 1. Send the digital value to DAC.  
 2. Read the corresponding analog value at its output.  
-
 ### Waveform Generation
-
 #### Square Waveform
 1. Send low value (00) to the DAC.  
 2. Introduce suitable delay.  
@@ -35,9 +31,7 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 5. Repeat the above procedure from step 1.  
 ---
 ## PROGRAMS
-
 # 8086 Assembly Programs – DAC Interfacing
-
 ## Program: Square Wave
 
 | Memory Location | Program     | Comments                          |
@@ -76,13 +70,11 @@ To write an assembly language program in 8086 to generate Sawtooth and Square wa
 | Square    | 8.08V     |   6.405     |
 ---
 ## Model Graph
+<img width="591" height="808" alt="image" src="https://github.com/user-attachments/assets/40cbaf4c-088f-4aee-a0dc-e39f306779ec" />
 
 ## OUTPUT IMAGE OF DAC(SAWTOOTH WAVE FROM DSO AND SQUARE WAVE FROM DSO)
 <img width="1108" height="828" alt="image" src="https://github.com/user-attachments/assets/74d71b04-ef34-416c-aaa0-725b3a755c35" />
 <img width="1100" height="816" alt="image" src="https://github.com/user-attachments/assets/aa8eab40-3ca2-41f9-93dc-1f4d8d008b22" />
-
-
-
 
 ## Result
 
